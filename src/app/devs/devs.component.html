@@ -1,3 +1,72 @@
+
+<!-- <a href = "/donuts">To Donuts!</a> -->
+
 <div *ngFor="let d of devs?.complete">
+    <sprk-accordion>
+        <sprk-accordion-item
+          title="{{d.firstName}} {{d.lastName}}"
+          additionalClasses="sprk-u-mbs"
+          additionalHeadingClasses="sprk-b-TypeDisplaySeven"
+          idString="accordion-item-1"
+          analyticsString="object.action.event"
+        >
+          <p>
+            <app-dev-detail [myDev]="d"></app-dev-detail>
+          </p>
+        </sprk-accordion-item>  
+    </sprk-accordion>
+</div>
+
+<style>
+    .accHeader{
+    font-size: 48px;
+    width: 50%;
+    color: saddlebrown;
+    text-align: center;
+    border: 3px solid burlywood;
+    }
+
+    ul li {
+    display: inline-block;
+    border: 1px solid gold;
+    background-color: burlywood;
+    padding: 2px;
+    margin: 2px;
+    width: 50%;
+    font-size: larger;
+    font: Arial;
+    text-align: center;
+}
+
+    ul li:hover {
+        background-color:saddlebrown;
+        border: 0px;
+      
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+    }
+</style>
+
+<!-- <div *ngFor="let d of devs?.complete">
+    <app-dev-detail [myDev]="d"></app-dev-detail>
+</div>  -->
+
+<!-- <sprk-accordion>
+<sprk-accordion-item
+title="Donuts"
+additionalClasses="sprk-u-mbs"
+additionalHeadingClasses="sprk-b-TypeDisplaySeven"
+idString="accordion-item-1"
+analyticsString="object.action.event"
+>
+<p>
+  <div *ngFor="let d of devs?.complete">
     <app-dev-detail [myDev]="d"></app-dev-detail>
 </div>
+</p>
+</sprk-accordion-item>
+</sprk-accordion>  -->

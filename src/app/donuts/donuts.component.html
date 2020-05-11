@@ -1,6 +1,44 @@
-<p>DONUTS:</p>
+<h1>Donuts:</h1>
 <ul>
     <li *ngFor="let d of donuts?.results">
-        <a [routerLink]="['/donuts', d.id]">{{d.name}}</a>
+         <a [routerLink]="['/donuts', d.id]">{{d.name}}</a>
+        <br/>
     </li>
 </ul>
+
+
+<style>
+    h1{
+    font-size: 48px;
+    font-family: 'Lucida Sans';
+    width: 75%;
+    color: saddlebrown;
+    text-align: center;
+    border: 3px solid burlywood;
+
+    }
+
+    ul li {
+    display: inline-block;
+    border: 1px solid gold;
+    background-color: burlywood;
+    padding: 2px;
+    margin: 2px;
+    width: 75%;
+    font-size: larger;
+    font-family: 'Lucida Sans';
+    text-align: center;
+}
+
+    ul li:hover {
+        background-color:saddlebrown;
+        border: 0px;
+      
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+    }
+</style>

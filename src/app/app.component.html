@@ -1,32 +1,41 @@
 
-<sprk-accordion>
-    <sprk-accordion-item
-      title="Donuts"
-      additionalClasses="sprk-u-mbs"
-      additionalHeadingClasses="sprk-b-TypeDisplaySeven"
-      idString="accordion-item-1"
-      analyticsString="object.action.event"
-    >
-      <p>
-        <app-donuts></app-donuts>
-        <router-outlet></router-outlet> 
-      </p>
-    </sprk-accordion-item>
+ <header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container">
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" routerLink="/donuts">Donuts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" routerLink="/devs">Devs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
 
-    <sprk-accordion-item
-      title="Hall of Famers"
-      idString="accordion-item-2"
-      analyticsString="object.action.event"
-      additionalHeadingClasses="sprk-b-TypeDisplaySeven"
-    >
-      <p>
-        <app-devs></app-devs>
-      </p>
-    </sprk-accordion-item>
-</sprk-accordion>
+<style>
+
+.navbar{
+    display: inline-block;
+    background-color: burlywood;
+    font-size: 18px;
+    font-family: 'Lucida Sans';
+    width: 75%;
+    color: saddlebrown;
+    text-align: left;
+    border: 3px solid gold;
+}
+
+</style>
+
+  <router-outlet></router-outlet> 
 
 
 
+  <!-- <a class="nav-link text-dark" asp-area="" routerLink="/donuts">Donuts</a> -->
 
 
 

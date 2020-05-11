@@ -3,11 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DonutsComponent } from './donuts/donuts.component';
 import { DonutDetailComponent } from './donut-detail/donut-detail.component'
+import { DevsComponent } from './devs/devs.component';
 
 
 const appRoutes: Routes = [
   { path: 'donuts', component: DonutsComponent },
   { path: 'donuts/:id', component: DonutDetailComponent },
+  { path: 'devs', component: DevsComponent},
   { path: '', redirectTo: '/donuts', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];

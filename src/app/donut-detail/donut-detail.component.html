@@ -1,7 +1,37 @@
-<p>Hello, this is donut detail</p>
-<a href="/donuts">Back to list</a>
+
+<h1>Donut Details:</h1>
 <div>
     Name: {{donut.name}} <br />
     <img width=500px src="{{donut.photo}}" /> <br />
-    Calories: {{donut.calories}}
+    Calories: {{donut.calories}} 
+    <a href="/donuts">Back to list</a>
 </div>
+
+<style>
+    h1{
+    font-size: 48px;
+    width: 75%;
+    color: saddlebrown;
+    text-align: center;
+    border: 3px solid burlywood;
+    }
+
+    div {
+    display: inline-block;
+    border: 5px solid gold;
+    background-color: burlywood;
+    width: 75%;
+    font-size: 24px;
+    text-align: left;
+    font-family: 'Lucida Sans'
+}
+
+    a {
+        display: inline-block;
+        border: 3px solid beige;
+        background-color: burlywood;
+        width: 100%;
+        font-size: 18px;
+        text-align: left;
+    }
+</style>
